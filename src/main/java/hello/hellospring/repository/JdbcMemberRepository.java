@@ -62,7 +62,7 @@ public class JdbcMemberRepository implements MemberRepository {
         }
     }
     @Override
-    public List<Member> finAll() {
+    public List<Member> findAll() {
         String sql = "select * from member";
         Connection conn = null;
         PreparedStatement pstmt = null;
